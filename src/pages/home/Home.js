@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './Home.scss'
 // import ProfilePic from '../../components/ProfilePic/ProfilePic'
 import HomeFace from '../../components/HomeFace/HomeFace'
-import SkillSection from '../Sections/SkillSection'
-import { axiosClient } from '../../Utilities/axiosClient'
+import SkillSection from '../Sections/SkillSection';
 import RecentProject from '../Sections/RecentProject'
 import PnGSection from '../Sections/PnGSection'
 import CallToAction from '../Sections/CallToAction'

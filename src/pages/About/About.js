@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.scss";
 import ProfilePic from "../../components/ProfilePic/ProfilePic";
-import SkillCard from "../../components/card/Card";
 import Education from "../Sections/Education";
 import { useSelector } from "react-redux";
 

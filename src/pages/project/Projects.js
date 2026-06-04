@@ -8,7 +8,6 @@ function Projects() {
 
   console.log("This is Project List", projectData);
   
-  const arr=[1,2,3,4,5]
   return (<>
     <div className="Projects">
       <div className="projectHeader vertical">

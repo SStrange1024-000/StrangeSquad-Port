@@ -1,18 +1,8 @@
 import React from "react";
 import "./Notes.scss";
-import Card from "../../components/card/Card";
 import PostCard from "../../components/card/PostCard";
-import { useDispatch, useSelector } from "react-redux";
-import { getMygallery } from "../../Redux/slices/appGallerySlice";
+import { useSelector } from "react-redux";
 function Notes() {
-  const notesTitle = [
-    "HTML Notes",
-    "CSS Notes",
-    "JS Notes",
-    "Python Notes",
-    "Java Notes",
-    "MySql",
-  ];
   const galleryData = useSelector((state) => state.appGalleryReducer.myGallery);
 
   console.log(" this is gal", galleryData);

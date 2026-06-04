@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ProfilePic from "../ProfilePic/ProfilePic";
 import { useDispatch } from "react-redux";
 import { deleteProject } from "../../Redux/slices/appProjectSlice";

@@ -21,7 +21,7 @@ import DashBoard, {
 import ProtectedRoute from "./components/ProtectedRoute";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useRef } from "react";
-import { myProfile, myPublicInfo } from "./Redux/slices/appProfileSlice";
+import { myPublicInfo } from "./Redux/slices/appProfileSlice";
 import { getMyProjects } from "./Redux/slices/appProjectSlice";
 import { getMygallery } from "./Redux/slices/appGallerySlice";
 
@@ -43,7 +43,7 @@ function App() {
     dispatch(myPublicInfo())
     dispatch(getMyProjects())
     dispatch(getMygallery())
-  },[])
+  },[dispatch])
 
 
 

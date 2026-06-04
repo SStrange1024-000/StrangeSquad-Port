@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import ProfilePic from '../../components/ProfilePic/ProfilePic';
 import './RecentProject.scss'
 import { useSelector } from 'react-redux';
@@ -22,7 +22,7 @@ function RecentProject() {
     //   hour12: true
 
     })
-
+ 
     console.log("Single project", latestPData);
     
   return (

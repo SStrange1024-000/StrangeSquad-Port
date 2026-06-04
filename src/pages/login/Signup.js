@@ -9,6 +9,8 @@ function Signup() {
   const [password, setPassword] = useState("");
 
   async function HandleSignup(){
+    console.log(name,email, secretKey,password);
+    
     
   }
 

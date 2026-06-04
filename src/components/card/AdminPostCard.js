@@ -1,5 +1,5 @@
 import React from "react";
-import { MdDeleteForever } from "react-icons/md";
+// import { MdDeleteForever } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { deletePost} from "../../Redux/slices/appGallerySlice";
 
@@ -28,7 +28,7 @@ function AdminPostCard({ gData }) {
   return (
     <div className="PostCard">
       <div className="postImg">
-        <img src={gData?.image?.url} />
+        <img src={gData?.image?.url} alt="posts pic" />
       </div>
       <div className="postCont">
         <h3>{gData?.title}</h3>

@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { axiosClient } from "../../Utilities/axiosClient";
-import axios from "axios";
 
 export const getAllmessages = createAsyncThunk('contact/getAllmessages',
     async (body , thunkAPI)=>{
