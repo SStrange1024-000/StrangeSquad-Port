@@ -1,0 +1,193 @@
+.Card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-top: 0;
+  border-radius: 4px;
+  box-shadow: 1px 2px 3px var(--bgcolor3);
+  background: var(--bgcolor1);
+  cursor: pointer;
+
+  .imgContainer {
+    height: 20vh;
+    padding: 10px;
+  }
+
+  .descContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--bgcolor3);
+
+    h2 {
+      font-size: 30px;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+// Message Card CSS
+
+.messageCard {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  &::after {
+    content: " ";
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background-color: rgb(149, 147, 147);
+  }
+  .msgCont {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    box-shadow: 1px 2px 3px var(--bgcolor3);
+    border-radius: 10px;
+    color: var(--textcolor);
+
+    div{
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+
+      .timeStamp{
+        font-size: 12px;
+        color: grey;
+      }
+    }
+    h2 {
+      color: var(--bgcolor3);
+      font-weight: 400;
+      font-size: 20px;
+    }
+
+    h3 {
+      font-weight: 400;
+    }
+
+    span {
+      color: var(--bgcolor3);
+    }
+  }
+  .msgBtns {
+    .btn3 {
+      cursor: pointer;
+      font-weight: 500;
+      padding: 6px 12px;
+      background-color: rgb(215, 10, 10);
+      border: none;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+    }
+  }
+}
+
+// Project Card
+
+.ProjectAdminCard {
+  max-width: 400px;
+  padding: 5px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 1px 2px 3px #6f6e6ebe;
+  margin: 2px;
+
+  .cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+
+    .name {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      gap: 10px;
+      .titleCont {
+        width: 50%;
+      }
+
+      .projectInfo {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .pName {
+          p {
+            font-size: 12px;
+            color: rgb(12, 12, 12);
+          }
+        }
+
+        p {
+          font-size: 10px;
+          font-weight: 600;
+          color: rgb(12, 12, 12);
+          span {
+            color: grey;
+          }
+        }
+      }
+    }
+  }
+}
+
+.deleteBtn {
+  padding: 8px 16px;
+  margin: 5px;
+  background-color: #910c0c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 1px 2px 2px #3b3a3abe;
+  transition: 0.3s;
+  overflow: hidden;
+
+  &:hover {
+    color: #fff;
+    background-color: #be0a0a;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .deleteBtn {
+    padding: 6px 12px;
+    background-color: #910c0c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 1px 2px 2px #3b3a3abe;
+    transition: 0.3s;
+
+    &:hover {
+      color: #fff;
+      background-color: #be0a0a;
+      cursor: pointer;
+    }
+  }
+}

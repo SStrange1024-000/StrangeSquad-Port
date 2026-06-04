@@ -1,0 +1,125 @@
+.PostCard {
+  display: inline-block;
+  height: auto;
+  margin-bottom: 16px;
+  break-inside: avoid;
+  background-color: #fff;
+  color: var(--textcolor);
+  box-shadow: 1px 2px 3px #d4d0d0;
+  .postImg {
+    width: 100%;
+    height: 250px;
+    border-radius: 2px 2px 0 0;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .postCont {
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .desc {
+      font-size: 14px;
+    }
+
+    .timeStamp {
+      text-align: center;
+      font-size: 12px;
+      color: #a7a3a3;
+    }
+
+    .desc2 {
+      
+      span {
+        font-weight: 600;
+      }
+    }
+
+    .timeStamp2 {
+      color: var(--textcolor);
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .PostCard {
+    min-height: 250px;
+    padding: 20px;
+    border-radius: 1px;
+
+    .postCont {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 5px;
+
+      h1 {
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .desc {
+        p {
+          font-size: 12px;
+        }
+      }
+
+      .read {
+        display: flex;
+        gap: 10px;
+        justify-content: start;
+        align-items: center;
+        font-size: clamp(15px, 2vw, 25px);
+
+        &:hover {
+          color: var(--bgcolor3);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .PostCard {
+    min-height: 200px;
+
+    .postCont {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 5px;
+
+      h1 {
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .desc {
+        p {
+          font-size: 12px;
+        }
+      }
+
+      .read {
+        display: flex;
+        gap: 10px;
+        justify-content: start;
+        align-items: center;
+        font-size: clamp(15px, 2vw, 25px);
+
+        &:hover {
+          color: var(--bgcolor3);
+        }
+      }
+    }
+  }
+}

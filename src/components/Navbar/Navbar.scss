@@ -1,0 +1,232 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #05042a;
+  // background: url("../../assets/Crow-bg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-bottom: 2px solid var(--textcolor2);
+  // background-color: var(--bgcolor3);
+  color: var(--textcolor2);
+  z-index: 10;
+
+  .leftPart {
+    width: auto;
+
+    .logo {
+      font-size: clamp(20px, 3vw, 40px);
+    }
+  }
+  .rightPart {
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .userAvatar{
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 5px 20px;
+      cursor: pointer;
+      border: 2px solid var(--bgcolor3);
+
+        &:hover{
+          transition: .3s;
+          transform: scale(1.1);
+        }
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .option {
+      padding: 5px;
+      font-size: 30px;
+      display: none;
+      &:hover {
+        transform: scale(1.1);
+        text-decoration: underline;
+      }
+    }
+
+    #btn2 {
+      min-width: 50px;
+      padding: 8px 16px;
+      margin: 8px;
+      margin-left: 20px;
+      font-size: 15px;
+      border-radius: 15px;
+      border: none;
+      background: var(--bgcolor3);
+      &:hover {
+        background-color: #fff;
+        // color: #fc036b;
+        color: var(--bgcolor3);
+        transform: scale(1.1);
+      }
+    }
+    .link {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      font-weight: 600;
+      overflow: visible;
+
+      .home {
+        padding: 5px;
+        font-size: 30px;
+      }
+
+      .links {
+        text-underline-offset: 6px;
+        &:hover {
+          transform: scale(1.1);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Navbar {
+    padding: 8px 20px;
+    .leftPart {
+      .logo {
+        font-size: 30px;
+      }
+    }
+    .rightPart {
+      margin: 0px 15px;
+
+      .option {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      #btn2 {
+        padding: 6px 10px;
+        margin: 6px;
+        font-size: 15px;
+      }
+      .mobileLink {
+        width: 60%;
+        min-width: 300px;
+        padding: 30px 20px;
+        background-color: #094675;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 25px;
+        position: absolute;
+        top: 63px;
+        right: 0;
+        z-index: 2;
+        transition: 0.3s;
+        z-index: 10;
+
+        .home {
+          &::after {
+            content: "Home";
+            padding: 8px 16px;
+          }
+        }
+
+        .links {
+          color: var(--textcolor2);
+          font-size: 16px;
+          font-weight: 500;
+          padding: 8px 16px;
+          border-bottom: 2px solid rgb(255, 255, 255);
+        }
+      }
+
+      .link {
+        padding: 8px 16px;
+        gap: 20px;
+        font-weight: 500;
+        display: none;
+
+        .home {
+          padding: 5px;
+          font-size: 25px;
+          text-underline-offset: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Navbar {
+    padding: 6px 12px;
+    .leftPart {
+      .logo {
+        font-size: 20px;
+      }
+    }
+    .rightPart {
+      margin: 0px 5px;
+
+      #btn2 {
+        padding: 1px 6px;
+        margin: 3px;
+        font-size: 11px;
+        border-radius: 20px;
+      }
+      .mobileLink {
+        width: 60%;
+        min-width: 300px;
+        padding: 30px 20px;
+        background-color: #094675;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 25px;
+        position: absolute;
+        top: 63px;
+        right: 0;
+        z-index: 2;
+        transition: 0.3s;
+        z-index: 10;
+
+        .home {
+          &::after {
+            content: "Home";
+            padding: 8px 16px;
+          }
+        }
+
+        .links {
+          font-size: 16px;
+          font-weight: 500;
+          padding: 8px 16px;
+          border-bottom: 2px solid rgb(255, 255, 255);
+        }
+      }
+
+      .link {
+        padding: 8px 16px;
+        gap: 20px;
+        font-weight: 500;
+        display: none;
+
+        .home {
+          padding: 5px;
+          font-size: 25px;
+          text-underline-offset: 4px;
+        }
+      }
+    }
+  }
+}

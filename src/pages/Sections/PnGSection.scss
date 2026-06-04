@@ -1,0 +1,57 @@
+.PnGSection {
+  width: 100%;
+  padding: 30px 20px;
+  background-color: #deebf6;
+
+  .head {
+    text-align: center;
+    padding: 20px;
+    text-shadow: 1px 2px 6px rgb(114, 112, 112);
+    color: var(--textcolor);
+  }
+
+  .top {
+    height: 400px;
+  }
+
+  .cont {
+    width: 80%;
+    margin: 5px auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+
+    .subHeading{
+      color: var(--bgcolor3);
+    }
+
+    .left,
+    .right {
+      margin: 5px;
+      box-shadow: 1px 2px 3px #dfdcdc;
+      border-radius: 2px;
+      background-color: #fff;
+      color: var(--textcolor);
+
+      &:hover {
+        transition: 0.3s;
+        cursor: pointer;
+      }
+      //   height: 250px;
+    }
+
+    .bottom {
+      width: 100%;
+      padding: 10px;
+
+      .timeStamp {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        color: #858282;
+        font-size: 12px;
+      }
+    }
+  }
+}

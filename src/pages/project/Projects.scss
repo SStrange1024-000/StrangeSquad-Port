@@ -1,0 +1,40 @@
+.Projects {
+  width: 100%;
+  .projectHeader {
+    box-shadow: 1px 2px 3px rgb(77, 73, 73);
+    background: linear-gradient(to left, var(--bgcolor3), rgb(17, 85, 116));
+    // background: url('../../assets/Project_banner.png');
+    background-position: center;
+    background-size: cover;
+    color: var(--textcolor2);
+    text-align: center;
+    padding: 40px;
+    transition: 0.3s;
+
+    p {
+      max-width: 600px;
+      margin: 0px auto;
+    }
+  }
+  .projectList {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #deebf6;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Projects {
+    width: 100%;
+    .projectHeader {
+      h1 {
+        font-size: 18px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 15px;
+      }
+      padding: 20px;
+    }
+  }
+}

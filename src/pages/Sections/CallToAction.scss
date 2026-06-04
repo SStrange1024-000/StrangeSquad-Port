@@ -1,0 +1,71 @@
+.CallToAction {
+  width: 100%;
+  padding: 40px;
+  background-image:
+  linear-gradient(to left, rgba(16, 165, 224, 0.255), rgba(25, 226, 244, 0.753)),
+  url('../../assets/Gallery\ Banner\ \(2\).jpg');
+  // background: url('../../assets/Gallery\ Banner\ \(2\).jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 2px 3px 4px #868686;
+
+  .cont {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #0000007e;
+    padding: 20px 40px;
+    color: #fff;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      h2{
+        color: var(--bgcolor3);
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .btnCont {
+      padding: 5px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 10vw));
+      justify-content: baseline;
+      align-items: center;
+      gap: 20px;
+
+      button {
+        max-width: 250px;
+        padding: 8px 25px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .btnCont {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: baseline;
+    align-items: center;
+    gap: 20px;
+
+    button {
+      max-width: auto;
+      padding: 8px 25px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,307 @@
+.Education {
+  width: 100%;
+  padding: 20px 0px;
+  position: relative;
+
+  header {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+
+    h1 {
+      font-size: clamp(30px, 3.5vw, 40px);
+      font-weight: 600;
+      color: var(--bgcolor3);
+      text-transform: uppercase;
+    }
+  }
+
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px 10px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column-reverse;
+    position: relative;
+    background: url("../../assets/bg3.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(30%);
+    background-size: cover;
+
+    &::after {
+      content: "";
+      width: 6px;
+      height: 100%;
+      background-color: var(--bgcolor3);
+      position: absolute;
+      top: 0;
+      left: 50%;
+    }
+
+    .eduCont-left {
+      left: 0;
+    }
+
+    .eduCont-right {
+      left: 50%;
+      &::after {
+        content: "";
+        width: 6px;
+        height: 100%;
+        //   background-color: aqua;
+        position: absolute;
+        top: 10px;
+        left: -10px;
+      }
+
+      .circle {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        position: absolute;
+        top: 28px;
+        left: -13px;
+        z-index: 1;
+      }
+    }
+
+    .eduCont {
+      width: 50%;
+      text-align: center;
+      padding: 10px 50px;
+      position: relative;
+      overflow: visible;
+
+      .circle {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: rgb(10, 10, 10);
+        position: absolute;
+        top: 28px;
+        right: -20px;
+        z-index: 1;
+        color: var(--textcolor2);
+      }
+
+      .box {
+        min-width: 100%;
+        padding: 20px 10px;
+        position: relative;
+        color: var(--textcolor);
+        opacity: 0.8;
+        background: linear-gradient(var(--bgcolor3), rgb(17, 85, 116));
+        box-shadow: 1px 2px 3px var(--textcolor);
+        border-radius: 5px;
+        overflow: visible;
+        color: var(--textcolor2);
+
+        h2 {
+          font-size: 2.1vw;
+          font-weight: 500;
+        }
+        h3 {
+          font-size: 1.5vw;
+          font-weight: 400;
+        }
+        p {
+          font-size: 1;
+        }
+
+        .Larrow {
+          position: absolute;
+          width: 0;
+          height: 0;
+          top: 28px;
+          z-index: 1;
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
+          border-left: 15px solid var(--bgcolor3);
+          right: -14px;
+        }
+
+        .Rarrow {
+          position: absolute;
+          width: 0;
+          height: 0;
+          top: 28px;
+          z-index: 1;
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
+          border-right: 15px solid var(--bgcolor3);
+          left: -14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Education {
+    padding: 10px 0px;
+    transition: 0.3s;
+
+    header {
+      padding: 15px;
+    }
+
+    .container {
+      margin: 20px auto;
+      padding: 18px;
+
+      &::after {
+        top: 0;
+        left: 23px;
+      }
+
+      .eduCont-left {
+        left: 0;
+      }
+
+      .eduCont-right {
+        left: 0;
+
+        &::after {
+          content: "";
+          width: 6px;
+          height: 100%;
+          position: absolute;
+          top: 10px;
+          left: 20px;
+        }
+      }
+
+      .eduCont {
+        width: 100%;
+        text-align: center;
+        padding: 10px 40px;
+        padding-left: 50px;
+        overflow: visible;
+
+        .circle {
+          width: 35px;
+          height: 35px;
+          top: 28px;
+          left: -10px;
+        }
+
+        .box {
+          min-width: 60%;
+          padding: 20px 10px;
+          border-radius: 5px;
+          overflow: visible;
+
+          h2 {
+            font-size: 20px;
+            font-weight: 500;
+          }
+
+          h3 {
+            font-size: 18px;
+            font-weight: 400;
+          }
+          p {
+            font-size: 15px;
+          }
+
+          .Larrow {
+            border-right: 15px solid var(--bgcolor3);
+            border-left: none;
+            left: -14px;
+          }
+
+          .Rarrow {
+            border-right: 15px solid var(--bgcolor3);
+            left: -14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Education {
+    padding: 10px 0px;
+    transition: 0.3s;
+
+    header {
+      padding: 10px;
+    }
+
+    .container {
+      margin: 15px auto;
+      padding: 15px;
+
+      &::after {
+        top: 0;
+        left: 20px;
+      }
+
+      .eduCont-left {
+        left: 0;
+      }
+
+      .eduCont-right {
+        left: 0;
+
+        &::after {
+          content: "";
+          width: 6px;
+          height: 100%;
+          position: absolute;
+          top: 10px;
+          left: 20px;
+        }
+      }
+
+      .eduCont {
+        width: 100%;
+        text-align: center;
+        padding: 10px 20px;
+        padding-left: 50px;
+        overflow: visible;
+
+        .circle {
+          width: 30px;
+          height: 30px;
+          top: 28px;
+          left: -7px;
+        }
+
+        .box {
+          width: 100%;
+          padding: 20px 10px;
+          border-radius: 5px;
+          overflow: visible;
+
+          h2 {
+            font-size: 20px;
+            font-weight: 400;
+          }
+
+          h3 {
+            font-size: 18px;
+            font-weight: 300;
+          }
+          p {
+            font-size: 15px;
+          }
+
+          .Larrow {
+            border-right: 15px solid var(--textcolor);
+            border-left: none;
+            left: -14px;
+          }
+
+          .Rarrow {
+            border-right: 15px solid var(--textcolor);
+            left: -14px;
+          }
+        }
+      }
+    }
+  }
+}

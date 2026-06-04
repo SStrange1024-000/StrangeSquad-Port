@@ -1,0 +1,99 @@
+.Login {
+  width: 100%;
+  height: 80vh;
+  padding: 40px;
+  margin-bottom: 2px;
+  background: radial-gradient(var(--bgcolor3), rgb(17, 85, 116));
+
+  form {
+    width: 400px;
+    background: var(--bgcolor1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 40px;
+    padding-top: 20px;
+    // border: 1px solid var(--bgcolor3);
+    box-shadow: 1px 2px 3px var(--bgcolor3);
+
+    h1 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+
+    input {
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid var(--bgcolor1);
+      font-size: 15px;
+    }
+    input:focus {
+      outline: none; /* removes default blue border */
+      border: 1px solid var(--bgcolor3);
+      box-shadow: 1px 1px 2px var(--bgcolor3);
+    }
+
+    .btn1 {
+      margin-top: 20px;
+      user-select: none;
+      background: transparent;
+      background-color: var(--bgcolor3);
+      color: var(--bgcolor1);
+      font-size: 20px;
+      font-weight: 600;
+      border: none;
+      transition: 0.2s;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        color: var(--bgcolor3);
+        background-color: var(--bgcolor1);
+        box-shadow: 1px 2px 3px var(--bgcolor3);
+        transition: 0.2s;
+      }
+    }
+
+    .alert{
+      color: red;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Login {
+    width: 100%;
+    height: 80vh;
+    padding: 40px;
+    background: linear-gradient(to left, var(--bgcolor3), rgb(17, 85, 116));
+
+    form {
+      width: auto;
+      gap: 15px;
+      border-radius: 10px;
+      padding: 30px;
+      padding-top: 20px;
+
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
+
+      input {
+        padding: 8px 16px;
+        font-size: 12px;
+      }
+
+      .btn1 {
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+  }
+}

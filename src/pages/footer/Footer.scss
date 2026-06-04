@@ -1,0 +1,131 @@
+.Footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  justify-content: center;
+  color: var(--textcolor2);
+
+  .FTop {
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #04091f;
+     h1{
+      margin: 0xp 10px;
+      font-size: clamp(20px,3vw,40px);
+     }
+
+    .fcont{
+      padding: 5px;
+      display: flex;
+      gap: 20px;
+
+      p{
+        cursor: pointer;
+        &:hover{
+          transform: scale(1.2);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .SocialLinks {
+
+    .socialMedia {
+      color: #c5c5ca;
+      display: flex;
+    }
+  }
+}
+
+.FBottom {
+  padding: 20px 40px;
+  background-color: #04091f;
+
+  h1 {
+    font-size: 14px;
+    font-weight: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Footer {
+    .FTop {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    
+      .SocialLinks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 10px;
+
+        h1 {
+          font-size: 12px;
+        }
+
+        .socialMedia {
+          display: flex;
+          gap: 10px;
+        }
+      }
+    }
+    .FBottom {
+      padding: 10px 20px;
+
+      h1 {
+        font-size: 11px;
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Footer {
+    .FTop {
+      display: block;
+      padding: 5px;
+
+      p {
+        font-size: 8px;
+        font-weight: 200;
+      }
+
+      .SocialLinks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 5px;
+
+        h1 {
+          font-size: 11px;
+        }
+
+        .socialMedia {
+          display: flex;
+          gap: 10px;
+
+          .icon {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .FBottom {
+      padding: 10px 20px;
+
+      h1 {
+        font-size: 11px;
+        font-weight: 100;
+      }
+    }
+  }
+}

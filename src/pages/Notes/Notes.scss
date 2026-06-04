@@ -1,0 +1,62 @@
+.Notes {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #deebf6;
+  transition: 0.3s;
+  .noteCont {
+    width: 100%;
+    .projectHeader {
+      box-shadow: 1px 2px 3px rgb(77, 73, 73);
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(to left, var(--bgcolor3), rgb(17, 85, 116));
+      color: var(--textcolor2);
+
+      p {
+        max-width: 600px;
+        margin: 0px auto;
+      }
+    }
+
+    .noteListCont {
+      width: 100%;
+      .notesList {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: left;
+        gap: 16px;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Notes {
+    min-height: 80vh;
+    .noteCont {
+      width: 100%;
+      .projectHeader {
+        box-shadow: 0px 1px 2px rgb(77, 73, 73);
+        padding: 20px;
+
+        h1 {
+          font-size: 18px;
+          font-weight: 400;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+
+      .notesList {
+        width: 90%;
+        padding: 0px;
+        padding-top: 10px;
+        margin: 5px auto;
+        display: grid;
+        gap: 10px;
+      }
+    }
+  }
+}
