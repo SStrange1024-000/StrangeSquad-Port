@@ -94,3 +94,23 @@
     }
   }
 }
+@media screen and (max-width: 360px) {
+  .SkillSection {
+    padding-top: 20px;
+    .topPart {
+      padding: 10px;
+      h1 {
+        font-size: 20px;
+      }
+    }
+
+    .bottomPart {
+      .skillsList {
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+
+      }
+    }
+  }
+}

@@ -160,6 +160,16 @@
 
 @media screen and (max-width: 480px) {
   .About {
-    padding: 30px;
+    padding: 15px;
+
+    .aboutCont{
+      padding: 10px;
+    }
+
+    .rightPart {
+      .desc {
+        font-size: 14px;
+      }
+    }
   }
 }

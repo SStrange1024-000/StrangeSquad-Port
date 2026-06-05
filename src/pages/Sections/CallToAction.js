@@ -30,7 +30,7 @@ function CallToAction() {
         </div>
         <div className="btnCont">
           <button className="links btn2 btnc" onClick={handleContact}>Contact</button>
-          <button className="links btn2" onClick={handleProject}>Project</button>
+          <button className="links btn2 btnc" onClick={handleProject}>Project</button>
         </div>
       </div>
     </div>

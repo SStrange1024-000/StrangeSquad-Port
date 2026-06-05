@@ -1,13 +1,15 @@
 .ProfilePic {
   width: 100%;
   height: 100%;
-  // padding: 10px;
   cursor: pointer;
+  display: flex;
+  align-items: flex-start;
 
   .profile {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;  // Add this line - aligns image from top
     text-align: center;
   }
 }

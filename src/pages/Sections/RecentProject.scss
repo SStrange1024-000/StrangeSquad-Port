@@ -57,3 +57,66 @@
     }
   }
 }
+@media screen and (max-width: 480px){
+  .RecentProject {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  // background: linear-gradient(var(--bgcolor3), rgb(17, 85, 116));
+  // background: url('../../assets/Project_banner.png');
+  background-image:
+  linear-gradient(to left, rgba(16, 165, 224, 0.255), rgba(25, 226, 244, 0.753)),
+  url('../../assets/Project_banner.png');
+  background-position: center;
+  background-size: cover;
+  color: var(--textcolor2);
+  .top {
+    text-align: center;
+    // background: #00000090;
+    .heading {
+      font-size: 20px;
+    }
+  }
+  .bottom {
+    width: auto;
+    padding: 20px 10px;
+    display: grid;
+    background: #00000070;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+    justify-content: center;
+    align-content: center;
+
+    .left {
+      max-height: 400px;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      gap: 10px;
+
+      p{
+        font-size: 14px;
+      }
+      .bold {
+        font-weight: 600;
+        color: var(--bgcolor3);
+      }
+      .tech {
+        padding: 5px 0px;
+      }
+      h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        color: var(--bgcolor3);
+      }
+    }
+  }
+}
+
+}

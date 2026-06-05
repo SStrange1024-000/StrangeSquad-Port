@@ -17,9 +17,9 @@
   }
 
   .container {
-    width: 80%;
+    width: 100%;
     margin: 20px auto;
-    padding: 20px 10px;
+    padding: 10px;
     display: flex;
     gap: 20px;
     flex-direction: column-reverse;
@@ -224,7 +224,7 @@
 
 @media screen and (max-width: 480px) {
   .Education {
-    padding: 10px 0px;
+    padding: 5px 0px;
     transition: 0.3s;
 
     header {
@@ -249,7 +249,7 @@
 
         &::after {
           content: "";
-          width: 6px;
+          width: 3px;
           height: 100%;
           position: absolute;
           top: 10px;
@@ -260,7 +260,7 @@
       .eduCont {
         width: 100%;
         text-align: center;
-        padding: 10px 20px;
+        padding: 5px;
         padding-left: 50px;
         overflow: visible;
 
@@ -273,21 +273,21 @@
 
         .box {
           width: 100%;
-          padding: 20px 10px;
+          padding:10px;
           border-radius: 5px;
           overflow: visible;
 
           h2 {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 400;
           }
 
           h3 {
-            font-size: 18px;
+            font-size: 14px;
             font-weight: 300;
           }
           p {
-            font-size: 15px;
+            font-size: 12px;
           }
 
           .Larrow {
