@@ -102,12 +102,22 @@
       align-items: start;
       gap: 5px;
 
+      h3{
+        font-size: 14px;
+      }
+
       h1 {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 500;
       }
 
       .desc {
+        p {
+          font-size: 12px;
+        }
+      }
+      
+      .desc2 {
         p {
           font-size: 12px;
         }
