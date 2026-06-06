@@ -690,3 +690,60 @@
     }
   }
 }
+@media screen and (max-width: 360px) {
+  .DeleteComponent {
+    padding: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    .topPart {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      .heading {
+        width: 100%;
+        color: var(--bgcolor3);
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .headCont {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap-reverse;
+        gap: 10px;
+
+        div {
+          display: flex;
+          gap: 10px;
+          padding: 5px;
+
+          .btn1 {
+            background-color: #fff;
+            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.641);
+            &:active {
+              border: 1px solid black;
+            }
+          }
+
+          p {
+            font-weight: 600;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .bottomPart {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+      gap: 10px;
+    }
+  }
+}
