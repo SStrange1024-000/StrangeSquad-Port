@@ -118,6 +118,7 @@
   .HomeFace {
     overflow: hidden;
     .container {
+      gap: 40px;
       padding: 20px;
       flex-wrap: wrap-reverse;
       text-align: center;
@@ -153,6 +154,10 @@
 
 @media screen and (max-width: 480px) {
   .HomeFace {
+    .container{
+      padding-top: 20px;
+      gap: 20px;
+    }
     .rightPart {
       width: 400px;
     }
