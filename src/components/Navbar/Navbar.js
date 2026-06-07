@@ -59,7 +59,7 @@ function Navbar() {
             Contact
           </Link>
         </div>
-        {!getUser && <Link to="/login" className="links center" id="btn2" >
+        {!getUser && <Link to="/login" className="links" id="btn2" >
           Login
         </Link>}
         {getUser && <div className="userAvatar" onClick={handleUser}> <img src={uData?.message?.adminData?.profilePic?.url} alt="avatar" /></div>}

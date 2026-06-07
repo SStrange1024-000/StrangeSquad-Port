@@ -179,8 +179,11 @@
       margin: 0px 5px;
 
       #btn2 {
-        padding: 1px 6px;
-        margin: 3px;
+        padding:4px;
+        // margin: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 11px;
         border-radius: 20px;
       }
